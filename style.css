@@ -839,3 +839,63 @@ img {
     }
 
 }
+/* SOLUCION RAPIDA MOVIL */
+@media screen and (max-width: 600px){
+
+body{
+    overflow-x:hidden !important;
+}
+
+header{
+    display:block !important;
+    text-align:center;
+}
+
+.logo{
+    display:block !important;
+    text-align:center;
+}
+
+.logo img{
+    width:120px !important;
+    height:auto !important;
+}
+
+.logo h1{
+    font-size:28px !important;
+    white-space:normal !important;
+}
+
+nav{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:10px !important;
+}
+
+.hero{
+    display:block !important;
+    width:100% !important;
+    padding:20px !important;
+}
+
+.hero-texto h2{
+    font-size:30px !important;
+}
+
+.hero-texto p{
+    font-size:16px !important;
+}
+
+.hero-imagen img,
+.hero-logo img{
+    width:100% !important;
+    height:auto !important;
+}
+
+.tarjeta,
+.killa-tarjeta{
+    width:100% !important;
+    padding:15px !important;
+}
+
+}
