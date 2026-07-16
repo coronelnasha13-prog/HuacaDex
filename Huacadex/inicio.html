@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HuacaDex | Inicio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f6f0e8;
+color:#4b3621;
+}
+
+/*========== ENCABEZADO ==========*/
+
+header{
+
+background:white;
+
+padding:18px 70px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:90px;
+
+}
+
+.logo h1{
+
+font-family:'Cinzel',serif;
+
+font-size:40px;
+
+letter-spacing:2px;
+
+color:#5b3b22;
+
+margin:0;
+
+}
+
+.logo p{
+
+font-size:15px;
+
+color:#6b5135;
+
+letter-spacing:0.5px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#5b3b22;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#b07b45;
+
+}
+
+/*========== PORTADA ==========*/
+
+.hero{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:80px 40px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
+}
+
+.hero-texto{
+
+flex:1;
+
+}
+
+.hero-texto h2{
+
+font-family:'Cinzel',serif;
+
+font-size:55px;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+color:#4b3621;
+
+}
+
+.hero-texto p{
+
+font-size:20px;
+
+line-height:1.9;
+
+margin-bottom:35px;
+
+color:#6b5b4b;
+
+}
+
+.boton{
+    background:#7a5230;
+    color:white;
+    padding:16px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#5b3e26;
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+display:inline-block;
+
+background:#8b5e34;
+
+color:white;
+
+padding:16px 36px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.boton:hover{
+
+background:#6b4f36;
+
+transform:translateY(-3px);
+
+}
+
+.hero-logo{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-logo img{
+
+width:800px;
+
+max-width:100%;
+
+}
+.info{
+
+max-width:1200px;
+
+margin:40px auto 80px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info h2{
+
+font-family:'Cinzel',serif;
+
+font-size:32px;
+
+color:#5b3b22;
+
+margin-bottom:20px;
+
+}
+
+.info p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#5d5246;
+
+}
+.hero-logo img{
+    transition:0.4s;
+}
+
+.hero-logo img:hover{
+    transform:scale(1.08);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="img/logo-huacadex.png" alt="HuacaDex">
+
+<div>
+
+<h1>HUACADEX</h1>
+
+<p>Explora el patrimonio arqueológico de Lima Norte</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="inicio.html">Inicio</a>
+
+<a href="#">Huacas</a>
+
+<a href="#">Proyecto</a>
+
+<a href="#">Contacto</a>
+
+</nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h2>Conectando a los jóvenes con el patrimonio cultural de Lima Norte</h2>
+
+        <p>
+            HuacaDex es una plataforma educativa que busca acercar a los jóvenes a las huacas de Lima Norte mediante experiencias interactivas, información histórica y desafíos que fomentan el cuidado de nuestro patrimonio cultural.
+        </p>
+
+        <a href="#huacas" class="boton">Explorar Huacas</a>
+
+    </div>
+
+    <div class="hero-logo">
+
+        <img src="img/logo-huacadex.png" alt="Logo HuacaDex">
+
+    </div>
+
+</section>
+
+<section class="info">
+
+    <h2>¿Por qué nace HuacaDex?</h2>
+
+    <p>
+        Muchas personas desconocen la importancia de las huacas de Lima Norte. Como consecuencia, gran parte de nuestro patrimonio cultural pasa desapercibido o no recibe la valoración que merece. HuacaDex propone una forma innovadora de acercar la historia a las nuevas generaciones mediante tecnología, actividades interactivas y experiencias educativas.
+    </p>
+
+</section>

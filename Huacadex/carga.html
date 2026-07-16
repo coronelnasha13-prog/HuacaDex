@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HuacaDex - Preparando recorrido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#6b4f36,#8d6748,#c7a17a);
+}
+
+.contenedor{
+background:rgba(255,255,255,.95);
+padding:45px;
+width:420px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.logo{
+margin-bottom:20px;
+animation:flotar 2s infinite;
+}
+
+.logo img{
+width:150px;
+height:auto;
+}
+
+h1{
+font-family:'Cinzel',serif;
+color:#6b4f36;
+font-size:34px;
+margin-bottom:15px;
+}
+
+p{
+color:#666;
+margin-bottom:30px;
+line-height:1.5;
+}
+
+.barra{
+width:100%;
+height:18px;
+background:#ddd;
+border-radius:30px;
+overflow:hidden;
+}
+
+.progreso{
+height:100%;
+width:0%;
+background:#7a5230;
+animation:cargar 3s forwards;
+}
+
+@keyframes cargar{
+from{
+width:0%;
+}
+to{
+width:100%;
+}
+}
+
+@keyframes flotar{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="logo">
+    <img src="logo-huacadex.png" alt="HuacaDex">
+</div>
+
+<h1>Preparando tu recorrido...</h1>
+
+<p>
+
+Estamos preparando tu experiencia en HuacaDex.<br>
+En unos segundos podrás explorar las huacas de Lima Norte.
+
+</p>
+
+<div class="barra">
+
+
+<div class="progreso"></div>
+
+</div>
+<p id="porcentaje">0%</p>
+</div>
+
+<script>
+
+
+let porcentaje = 0;
+
+const texto = document.getElementById("porcentaje");
+
+const intervalo = setInterval(function(){
+
+porcentaje++;
+
+texto.innerHTML = porcentaje + "%";
+
+if(porcentaje >= 100){
+
+clearInterval(intervalo);
+
+window.location.href="inicio.html";
+
+}
+
+},30);
+
+</script>
+
+</body>
+</html>

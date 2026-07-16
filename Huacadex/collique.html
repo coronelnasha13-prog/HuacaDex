@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huaca Collique | HuacaDex</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+    <div class="logo">
+
+        <img src="img/logo-huacadex.png" alt="HuacaDex">
+
+        <div>
+
+            <h1>HUACADEX</h1>
+
+            <p>Explora el patrimonio arqueológico de Lima Norte</p>
+
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="inicio.html">Inicio</a>
+
+        <a href="inicio.html#huacas">Huacas</a>
+
+        <a href="#">Proyecto</a>
+
+        <a href="#">Contacto</a>
+
+    </nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h2>Huaca Collique</h2>
+
+        <p>
+            Descubre la historia de uno de los sitios arqueológicos más importantes de Lima Norte y conoce el legado que dejó el antiguo señorío Colli.
+        </p>
+
+        <a href="#" class="boton" onclick="mostrarRecorrido(); return false;">
+    Comenzar recorrido
+</a>
+
+</div>
+
+    <div class="hero-imagen">
+
+        <img src="img/collique.jpg" alt="Huaca Collique">
+
+    </div>
+
+</section>
+<div id="contenido" style="display:none;">
+<section class="killa-seccion" id="recorrido">
+
+    <div class="killa-tarjeta">
+
+       <div class="killa-avatar">
+    <img src="img/killa.png" alt="Killa">
+</div>
+
+        <div class="killa-texto">
+
+            <h2>Hola, soy Killa</h2>
+
+            <p>
+                Seré tu guía durante este recorrido por la Huaca Collique.
+                Aquí descubrirás su historia, su importancia cultural y por qué debemos proteger nuestro patrimonio arqueológico.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Historia de la Huaca Collique</h2>
+
+        <p>
+            La Huaca Collique pertenece al antiguo señorío Colli, una cultura que habitó el valle del río Chillón antes de la llegada de los incas. Este lugar fue un importante centro administrativo, ceremonial y de reunión para sus habitantes.
+        </p>
+
+        <p>
+            Con el paso del tiempo, la huaca fue testigo de importantes cambios en la historia de Lima Norte. Actualmente representa una valiosa evidencia del pasado prehispánico y permite conocer cómo vivían las antiguas sociedades que ocuparon esta zona.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Galería</h2>
+
+        <div class="galeria">
+
+            <img src="img/collique1.jpg" alt="Huaca Collique">
+
+            <img src="img/collique 2.jpg" alt="Huaca Collique">
+
+            <img src="img/collique 3.jpg" alt="Huaca Collique">
+
+        </div>
+        </div>
+     </section>
+
+        <section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Importancia cultural</h2>
+
+        <p>
+            La Huaca Collique representa una parte fundamental de la historia de Lima Norte. Este sitio arqueológico nos permite comprender cómo vivían las antiguas sociedades del valle del río Chillón y valorar el legado que dejaron a las futuras generaciones.
+        </p>
+
+        <p>
+            Conservar este patrimonio significa proteger nuestra identidad, fortalecer el conocimiento de nuestra historia y promover el respeto por la cultura peruana.
+        </p>
+
+    </div>
+
+</section>
+<section class="contenido">
+
+    <div class="dato-curioso">
+
+        <h2>¿Sabías que...?</h2>
+
+        <p>
+            Muchas personas viven muy cerca de la Huaca Collique sin conocer su historia. Uno de los objetivos de HuacaDex es acercar a los jóvenes a este importante patrimonio cultural y fomentar su conservación.
+        </p>
+
+    </div>
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Desafío HuacaDex</h2>
+
+        <p><strong>1. ¿A qué cultura perteneció la Huaca Collique?</strong></p>
+
+        <button class="respuesta" onclick="correcta(this)">Señorío Colli</button>
+
+        <button class="respuesta" onclick="incorrecta(this)">Imperio Romano</button>
+
+        <button class="respuesta" onclick="incorrecta(this)">Cultura Maya</button>
+
+        <hr>
+
+        <p><strong>2. ¿Dónde se ubica la Huaca Collique?</strong></p>
+
+        <button class="respuesta" onclick="incorrecta(this)">Cusco</button>
+
+        <button class="respuesta" onclick="correcta(this)">Comas, Lima</button>
+
+        <button class="respuesta" onclick="incorrecta(this)">Arequipa</button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+</section>
+</section>
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+<script>
+
+function mostrarRecorrido(){
+
+document.getElementById("contenido").style.display="block";
+
+document.getElementById("contenido").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+function correcta(boton){
+
+boton.classList.add("correcta");
+
+document.getElementById("resultado").innerHTML="🎉 ¡Excelente! Ahora eres un Protector del Patrimonio.";
+
+}
+
+function incorrecta(boton){
+
+boton.classList.add("incorrecta");
+
+}
+
+</script>
+<footer>
+
+    <h2>HUACADEX</h2>
+
+    <p>
+        Conectando a los jóvenes con el patrimonio arqueológico de Lima Norte.
+    </p>
+
+    <p>
+        Proyecto desarrollado para promover la conservación del patrimonio cultural.
+    </p>
+
+    <p class="copyright">
+        © 2026 HuacaDex | Todos los derechos reservados.
+    </p>
+
+</footer>
+
+</script>
+</body>
+
+</html>
