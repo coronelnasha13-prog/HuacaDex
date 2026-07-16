@@ -899,3 +899,12 @@ nav{
 }
 
 }
+@media (max-width: 600px){
+
+    body{
+        transform: scale(0.7);
+        transform-origin: top left;
+        width: 142%;
+        overflow-x:hidden;
+    }
+
