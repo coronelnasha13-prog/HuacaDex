@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HuacaDex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+background: linear-gradient(135deg, #5f3b1d, #8b5e34, #c2a27c);
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.tarjeta{
+width:420px;
+background:rgba(248,242,230,0.95);
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.logo{
+margin-bottom:20px;
+}
+
+.logo img{
+width:300px;
+height:auto;
+}
+
+h1{
+font-family:'Cinzel',serif;
+color:#6d4c41;
+font-size:42px;
+margin-bottom:10px;
+}
+
+p{
+color:#5f4b3a;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+button{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.registro{
+background:#b07d4f;
+color:white;
+}
+
+.registro:hover{
+background:#8d623d;
+}
+
+.login{
+background:#6d4c41;
+color:white;
+}
+
+.login:hover{
+background:#53382f;
+}
+
+.invitado{
+background:#5c8d5a;
+color:white;
+}
+
+.invitado:hover{
+background:#487048;
+}
+
+a{
+text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="tarjeta">
+
+<div class="logo">
+    <img src="logo-huacadex.png" alt="HuacaDex">
+</div>
+
+<h1>HuacaDex</h1>
+
+<p>
+Descubre, explora y protege las huacas del Perú.
+Conoce el patrimonio cultural que nos conecta con nuestra historia.
+</p>
+
+<a href="registro.html">
+<button class="registro">Registrarse</button>
+</a>
+
+<a href="iniciar_sesion.html">
+<button class="login">Iniciar sesión</button>
+</a>
+<a href="carga.html">
+    <button class="invitado">
+        Entrar como invitado
+    </button>
+</a>
+</div>
+
+</body>
+</html>

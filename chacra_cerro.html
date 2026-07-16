@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huaca Chacra cerro| HuacaDex</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+    <div class="logo">
+
+        <img src="img/logo-huacadex.png" alt="HuacaDex">
+
+        <div>
+
+            <h1>HUACADEX</h1>
+
+            <p>Explora el patrimonio arqueológico de Lima Norte</p>
+
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="inicio.html">Inicio</a>
+
+        <a href="inicio.html#huacas">Huacas</a>
+
+        <a href="#">Proyecto</a>
+
+        <a href="#">Contacto</a>
+
+    </nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h2>Huaca chacra cerro</h2>
+
+        <p>
+            Descubre la historia de uno de los sitios arqueológicos más importantes de Lima Norte y conoce el legado que dejó el antiguo señorío Colli.
+        </p>
+
+        <a href="#" class="boton" onclick="mostrarRecorrido(); return false;">
+    Comenzar recorrido
+</a>
+
+</div>
+
+    <div class="hero-imagen">
+
+        <img src="img/chacracerro.jpg" alt="Huaca Chacra cerro">
+
+    </div>
+
+</section>
+<div id="contenido" style="display:none;">
+<section class="killa-seccion" id="recorrido">
+
+    <div class="killa-tarjeta">
+
+       <div class="killa-avatar">
+    <img src="img/killa.png" alt="Killa">
+</div>
+
+        <div class="killa-texto">
+
+            <h2>Hola, soy Killa</h2>
+
+            <p>
+                Seré tu guía durante este recorrido por la Huaca Chacra cerro.
+                Aquí descubrirás su historia, su importancia cultural y por qué debemos proteger nuestro patrimonio arqueológico.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Historia de la Huaca Chacra cerro</h2>
+
+           <p>
+          La Huaca Chacra Cerro es uno de los principales sitios arqueológicos del distrito de Comas. Formó parte de los antiguos asentamientos del valle del río Chillón y estuvo vinculada al señorío Colli, una importante sociedad prehispánica que habitó Lima Norte antes de la expansión del Imperio Inca.
+         </p>
+
+         <p>
+          Este complejo arqueológico fue utilizado con fines administrativos, ceremoniales y comunitarios. Actualmente constituye un valioso testimonio de la historia prehispánica de la zona y representa un importante legado cultural para las nuevas generaciones.
+          </p>
+
+         </div>
+
+</section>
+
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Galería</h2>
+
+        <div class="galeria">
+
+            <img src="img/chacracerro1.jpg" alt="Huaca Collique">
+
+            <img src="img/chacracerro2.jpg" alt="Huaca Collique">
+
+            <img src="img/chacracerro3.jpg" alt="Huaca Collique">
+
+        </div>
+        </div>
+     </section>
+
+        <section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Importancia cultural</h2>
+
+        <p>
+      La Huaca Chacra Cerro demuestra la riqueza arqueológica de Lima Norte y nos permite conocer cómo vivían las antiguas culturas del valle del Chillón. Su conservación fortalece nuestra identidad cultural y contribuye a preservar la memoria histórica del Perú.
+     </p>
+     </div>
+
+</section>
+<section class="contenido">
+
+    <div class="dato-curioso">
+
+        <h2>¿Sabías que...?</h2>
+
+        <p>
+     ¿Sabías que la Huaca Chacra Cerro ha sido objeto de diversos trabajos de investigación arqueológica? Gracias a estos estudios se han recuperado importantes evidencias sobre la organización y la vida cotidiana de las antiguas poblaciones de Lima Norte.
+     </p>
+
+     </div>
+
+     </section>
+
+<section class="contenido">
+
+    <div class="tarjeta">
+
+        <h2>Desafío HuacaDex</h2>
+
+        <p><strong>1. ¿Dónde se encuentra la Huaca Chacra Cerro?</strong></p>
+
+<button class="respuesta" onclick="correcta(this)">Comas, Lima</button>
+
+<button class="respuesta" onclick="incorrecta(this)">Cusco</button>
+
+<button class="respuesta" onclick="incorrecta(this)">Piura</button>
+        <hr>
+
+        <p><strong>2. ¿A qué sociedad estuvo vinculada la Huaca Chacra Cerro?</strong></p>
+
+<button class="respuesta" onclick="correcta(this)">Señorío Colli</button>
+
+<button class="respuesta" onclick="incorrecta(this)">Imperio Romano</button>
+
+<button class="respuesta" onclick="incorrecta(this)">Cultura Nazca</button>
+        <div id="resultado"></div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+
+</div>
+
+
+
+<script>
+
+function mostrarRecorrido(){
+
+document.getElementById("contenido").style.display="block";
+
+document.getElementById("contenido").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+}
+
+function correcta(boton){
+
+boton.classList.add("correcta");
+
+document.getElementById("resultado").innerHTML="🎉 ¡Excelente! Ahora eres un Protector del Patrimonio.";
+
+}
+
+function incorrecta(boton){
+
+boton.classList.add("incorrecta");
+
+}
+
+</script>
+<footer>
+
+    <h2>HUACADEX</h2>
+
+    <p>
+        Conectando a los jóvenes con el patrimonio arqueológico de Lima Norte.
+    </p>
+
+    <p>
+        Proyecto desarrollado para promover la conservación del patrimonio cultural.
+    </p>
+
+    <p class="copyright">
+        © 2026 HuacaDex | Todos los derechos reservados.
+    </p>
+
+</footer>
+
+</script>
+</body>
+
+</html>
