@@ -908,3 +908,30 @@ nav{
         overflow-x:hidden;
     }
 
+@media (max-width:600px){
+
+    .hero,
+    .contenido,
+    .contenedor,
+    .tarjeta,
+    .killa-tarjeta,
+    .galeria{
+        width:100% !important;
+        max-width:100% !important;
+    }
+
+    .galeria{
+        display:block !important;
+    }
+
+    .galeria img{
+        width:100% !important;
+        height:auto !important;
+    }
+
+    h1,h2,p{
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+}
