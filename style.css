@@ -480,3 +480,18 @@ nav{
 }
 
 }
+   /* IMAGEN PRINCIPAL DE HUACA */
+
+.hero-imagen{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-imagen img{
+    width:100%;
+    max-width:450px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+}
