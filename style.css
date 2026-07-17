@@ -460,3 +460,65 @@ nav{
 }
 
 }
+/* ==========================================
+   TARJETAS DE HUACAS
+========================================== */
+
+.huacas{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.huaca{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.huaca:hover{
+    transform:translateY(-8px);
+}
+
+.huaca img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.huaca h3{
+    font-family:'Cinzel',serif;
+    color:#5b3b22;
+    padding:20px 20px 10px;
+}
+
+.huaca p{
+    padding:0 20px 20px;
+}
+
+.huaca .boton{
+    display:block;
+    margin:20px;
+    text-align:center;
+}
+/* Ajuste de encabezado en celular */
+@media(max-width:600px){
+
+    header{
+        padding:15px 10px;
+    }
+
+    .encabezado{
+        min-height:70px;
+    }
+
+    .logo{
+        width:90px;
+    }
+
+}
