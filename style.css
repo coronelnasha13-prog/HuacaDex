@@ -495,3 +495,58 @@ nav{
     object-fit:cover;
     border-radius:20px;
 }
+   /* =========================
+   DESAFÍO HUACADEX
+========================= */
+
+.respuesta{
+    display:block;
+    width:100%;
+    background:#f6f0e8;
+    color:#5b3b22;
+    border:2px solid #8b5e34;
+    padding:14px 20px;
+    margin:12px 0;
+    border-radius:15px;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.respuesta:hover{
+    background:#8b5e34;
+    color:white;
+    transform:translateY(-2px);
+}
+
+
+.respuesta.correcta{
+    background:#6b8e23;
+    color:white;
+    border-color:#6b8e23;
+}
+
+
+.respuesta.incorrecta{
+    background:#a0522d;
+    color:white;
+    border-color:#a0522d;
+}
+
+
+/* Caja del desafío */
+
+.contenido .tarjeta{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+
+.contenido h2{
+    font-family:'Cinzel',serif;
+    color:#5b3b22;
+}
