@@ -313,3 +313,57 @@ nav{
     align-items:center;
     justify-content:center;
 }
+/* =========================
+   INDEX - TARJETA Y BOTONES
+========================= */
+
+.tarjeta{
+    width:420px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    margin:80px auto;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+
+.registro,
+.login,
+.invitado{
+    display:inline-block;
+    border:none;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:25px;
+    font-family:'Poppins', sans-serif;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+.registro{
+    background:#8b5e34;
+    color:white;
+}
+
+
+.login{
+    background:white;
+    color:#8b5e34;
+    border:2px solid #8b5e34;
+}
+
+
+.invitado{
+    background:#5b3b22;
+    color:white;
+}
+
+
+.registro:hover,
+.login:hover,
+.invitado:hover{
+    transform:translateY(-3px);
+}
