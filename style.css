@@ -528,5 +528,10 @@ nav{
     .logo{
         gap:8px;
     }
+header{
+    position:static !important;
+    top:auto !important;
+    z-index:auto !important;
+}
 
 }
