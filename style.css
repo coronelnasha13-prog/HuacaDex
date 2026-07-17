@@ -550,3 +550,62 @@ nav{
     font-family:'Cinzel',serif;
     color:#5b3b22;
 }
+   /* =========================
+   ORDEN GENERAL HUACAS
+========================= */
+
+.contenido{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 25px;
+}
+
+
+.tarjeta,
+.dato-curioso{
+    width:100%;
+}
+
+
+.tarjeta h2,
+.dato-curioso h2{
+    margin-bottom:20px;
+}
+
+
+.tarjeta p,
+.dato-curioso p{
+    line-height:1.8;
+}
+   .hero{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
+
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-texto h2{
+    font-size:34px;
+}
+
+.contenido{
+    padding:0 15px;
+}
+
+}
+   .galeria img{
+    aspect-ratio:4/3;
+    object-fit:cover;
+}
