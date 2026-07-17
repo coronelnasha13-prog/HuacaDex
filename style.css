@@ -279,21 +279,18 @@ nav{
     box-shadow:0 8px 15px rgba(0,0,0,.15);
 }
 
-   /* =========================
-   TARJETA INDEX
-========================= */
+ /* TARJETA INDEX */
 
 .tarjeta{
     width:420px;
-    background:white;
+    background:#ffffff;
     padding:45px;
     border-radius:25px;
     text-align:center;
     margin:80px auto;
     box-shadow:0 10px 30px rgba(0,0,0,.15);
+    position:relative;
 }
-
-.tarjeta .logo img{
     width:120px;
     margin:auto;
 }
