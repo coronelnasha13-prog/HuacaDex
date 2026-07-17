@@ -234,4 +234,47 @@ nav{
     font-size:16px;
 }
 
+/* =========================
+   BOTONES INDEX
+========================= */
+
+.registro,
+.login,
+.invitado{
+    border:none;
+    padding:15px 35px;
+    border-radius:25px;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin:10px;
+    transition:.3s;
+}
+
+/* Registrarse */
+.registro{
+    background:#8b5e34;
+    color:white;
+}
+
+/* Iniciar sesión */
+.login{
+    background:white;
+    color:#8b5e34;
+    border:2px solid #8b5e34;
+}
+
+/* Invitado */
+.invitado{
+    background:#5b3b22;
+    color:white;
+}
+
+
+.registro:hover,
+.login:hover,
+.invitado:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
 }
